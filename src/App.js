@@ -1,8 +1,10 @@
+
+   import Card from "./Component/card";
 const array = [
   {
-           cardImg: "https://m.media-amazon.com/images/I/81MZSImKjKL._AC_UY327_FMwebp_QL65_.jpg",
+           cardImg: "https://m.media-amazon.com/images/I/91uWVexrkoL._AC_UY327_FMwebp_QL65_.jpg",
 
-           title: "Three Stooges",
+           title: "The three Stooges",
 
            OtherInfo: " Moe Howard , Larry Fine , Curly Howard and Shemp Howard",
 
@@ -95,20 +97,15 @@ const array = [
 
 function App() {
   return (
-    <div style={{}}>
+    <div>
       {array.map((e)=>{
 
         return(  
+
+          <Card el ={e}/>
         
-        <div style={{border:"2px solid red",width:"245px",borderRadius:"10px",display: "inline-block",padding:"10px",margin:"45px",boxShadow:"5px 10px 10px green"}}>
-
-        <img hight={"300px"}  src={e.cardImg}  alt=""/>
-        <h2>{e.title}</h2>
-        <p>{e.OtherInfo}</p>
-        <h3>{e.price}</h3>
-
-
-</div>
+       
+   
       )})}
      
     </div>
